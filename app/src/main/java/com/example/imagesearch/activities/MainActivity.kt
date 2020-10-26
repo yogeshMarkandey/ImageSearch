@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity(), FlickrPhotoAdapter.TapListener {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         
 
-        
+
         recyclerview_main.setHasFixedSize(true)
         recyclerView.itemAnimator = null
         recyclerview_main.adapter = adapter.withLoadStateHeaderAndFooter(
